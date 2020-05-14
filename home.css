@@ -1,0 +1,292 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    }
+    
+    
+/* Configuração Barra superior (Sempre que chamar classe trazer ponto e nome  -----------------------------------------*/
+.topnav{
+    width: 100%;
+    height: 70px;
+    top: 0;
+    left: 0;
+    background-color:rgb(27, 31, 49);
+    position: fixed;
+        }
+
+
+    /* Estilização do icone do menu ------------------------ */
+    .menu-icon{
+    position: fixed;
+    margin-top: 15px;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 5px;
+    width: 40px;
+    height: 40;
+    text-align: center;
+    background-color: rgb(27, 31, 49);
+    color: #fff;
+    cursor: pointer;
+    transition: all .2s;
+    left: 10px;
+    top: 0;
+        }
+
+    #chk:checked ~ .menu-icon{
+        transform: translateX(300px);
+    }
+
+    .menu-icon:hover{
+    background-color: #fff;
+    color: #222F65;
+        }
+
+    /* estilização do checkbox--------------------------- > */
+    #chk{
+    display: none;
+    }
+
+
+    .bg{
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        position: fixed;
+        background-color:rgb(27, 31, 49);
+        display: none;
+    }
+
+    #chk:checked ~ .bg{
+        display: none;
+        
+    } 
+
+    /* estilização da barra do menu-----------------------------------> */
+    .menu{
+    height: 100%;
+    position: fixed;
+    background-color: rgb(27, 31, 49);
+    top: 0;
+    overflow: hidden;
+    transition: all .2s;
+    }
+    /* Estilização da barra do menu para se mover--------------------> */
+  
+    #chk:checked ~ #principal{
+        transform: translateX(300px);
+            }
+
+    #principal{
+        width: 300px;
+        left: -300px;
+        z-index: 3;
+            }
+
+    /* Estilização do formato das opções do menu */
+    ul{
+    list-style: none;
+        }
+
+    /* estilização das opções do menu------------------------------> */
+    ul li a{
+        display: block;
+        font-size: 18px;
+        font-family: 'Arial';
+        padding: 10px;
+        border-bottom: solid 1px #ccc;
+        color: #ccc;
+        text-decoration: none;
+        transition: all .2s;
+            }
+    
+    ul li span{
+        float: right;
+        padding-right: 10px;
+            }
+
+    ul li a:hover{
+        background-color: rgb(241, 242, 247);
+        color: rgb(27, 31, 49);
+            }
+
+
+    .voltar{
+        margin-top: 70px;
+        font-style: italic;
+        background-color: rgb(13, 14, 20);
+            }
+
+    #Projetos,
+    #Movimentação,
+    #Contas,
+    #cadastrarusuario{
+        width: 250px;
+        left: -250px;
+        z-index: 6;
+    }
+
+
+    #Projetos:target,
+    #Movimentação:target,
+    #Contas:target,
+    #cadastrarusuario:target{
+        transform: translateX(250px);
+        box-shadow: 2px 2px 5px 5px rgba(0,0,0.5);
+    }
+
+
+    .Projetos_sub{
+        font-style: italic;
+        margin-top: 6px;
+        display: block;
+        font-size: 12px;
+        font-family: 'Arial';
+        padding: 10px;
+        border-bottom: solid 1px #ccc;
+        color: #ccc;
+        text-decoration: none;
+        transition: all .2s;
+            }
+
+    .Movimentação_sub{
+        font-style: italic;
+        display: block;
+        font-size: 12px;
+        font-family: 'Arial';
+        padding: 10px;
+        border-bottom: solid 1px #ccc;
+        color: #ccc;
+        text-decoration: none;
+        transition: all .2s;
+            }
+
+    .Contas_sub{
+        font-style: italic;
+        display: block;
+        font-size: 12px;
+        font-family: 'Arial';
+        padding: 10px;
+        border-bottom: solid 1px #ccc;
+        color: #ccc;
+        text-decoration: none;
+        transition: all .2s;
+    }
+
+    .back{     
+    margin-top: 6px;     
+    font-style: italic;     
+    background-color: rgb(13, 14, 20); }
+
+    /* estilização do titulo principal da pagina----------------------------------> */
+    .titulo{
+    margin-top: -04px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center; 
+    text-decoration:none; 
+    font-family:'Arial';
+    height: 4em; 
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    }
+
+   
+    .heading{
+    color: black;     
+    text-align: center;     
+    padding-top: 200px;     
+    display: flex;     
+    align-items: center;     
+    justify-content: center;
+        }
+
+    .Logo{
+    position: absolute;
+    width: 150px;
+    margin-left: 74px;
+    margin-top: 12px;
+    }
+
+
+    /* Estilização Pagina Lista de Projetos */
+
+    .grid1{
+        /* Posicionamento do objeto */
+        /* position: relative; */
+        text-align: center;
+        width: 64%;
+        margin-left: 231px;
+        margin-top: 260px;
+        height: 96%;
+        background-color: #f6f7f9;
+        border-radius: 6px;
+    }
+
+
+    .Sombra{
+        box-shadow: inset 0 0 10px #000000;
+        -webkit-box-shadow: inset 0 0 10px #000000;
+        -moz-box-shadow: inset 0 0 10px #000000;
+
+      }
+
+
+    .topicos{
+
+        padding: 15px;
+        background-color: rgb(27, 31, 49) !important;
+        color: #fff;
+        border-radius: 6px; 
+        
+    }
+    
+    .Linha1{
+        padding: 25px;
+        background-color: rgba(8, 12, 15, 0.096);
+        justify-content: center;     
+        display: grid;     
+        grid-template-columns: 200px 200px 200px;
+    }
+
+    .Linha2{
+        padding: 25px;
+        justify-content: center;    
+        display: grid;     
+        grid-template-columns: 200px 200px 200px;
+    }
+
+
+
+        .botaoedit{
+        display: flex;     
+        justify-content: center;  
+        padding: 08px;
+        border-radius: 6px;   
+        text-align: center;
+        align-items: center; 
+        background-color: rgb(27, 31, 49) !important;
+        color: #fff;
+        /* margin-top:-850px;
+        margin-left: 510px; */
+                }
+        
+      
+        .botaocadastrar{
+        background-color: rgb(27, 31, 49) !important;
+        color: #fff; 
+        }
+
+    
+       .botaocadastrarnovoprojeto{
+        color: #ccc !important;
+        font-family: Arial, Helvetica, sans-serif;
+       }
+
+       .botaocadastrarnovoprojeto:hover{
+        background-color: #fff;
+        color: #222F65 !important;
+            }

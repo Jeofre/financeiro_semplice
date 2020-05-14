@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista_de_projetos</title>
+    <link rel="stylesheet" type="text/css" href="home.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+    
+    <nav class="topnav">
+        <div>
+            <H5 class="titulo">Projetos</H5>
+        </div>
+    </nav>
+ 
+    <!-- criação de checkbox e icone do menu  -->
+    <input type="checkbox" id="chk">
+    <label for="chk" class="menu-icon" >&#9776;</label>
+    <div class="bg"></div>
+    
+
+    <!-- criação de menu  -->
+    <nav class="menu" id="principal">
+        <div>
+            <img class="Logo" src="Logo/Logo_Semplice.png_branco.png" alt="">
+        </div>
+        
+        
+            <!-- criação de lista para menu.  ou tag = <ol></ol> -->
+        <ul>
+            <li><a href="" class="voltar">Voltar</a></li>
+            <li><a href="#Projetos">Projetos <span>+</span></a></li>
+            <li><a href="#Contas">Contas <span>+</span></a></li>
+            <li><a href="#Movimentação">Movimentação <span>+</span></a></li>
+            <li><a href="#cadastrarusuario">Cadastrar Usuário <span>+</span></a></li>
+        </ul>
+    </nav>
+    
+    <!-- criação de submenus -->
+    <nav class="menu Sub_menu" id="Projetos">
+        <ul>
+            <li><a href="#" class="Projetos_sub">Projetos</a></li>
+            <li><a href="#" class="back">Voltar</a></li>
+            <li><a href="lista_projeto.html">Lista de Projetos</a></li>
+            <li><a type="button" class="botaocadastrarnovoprojeto" data-toggle="modal" data-target="#exampleModal" data-whatever="">Novo Projeto</a>
+        </ul>
+    </nav>
+
+    <nav class="menu" id="Movimentação">
+        <ul>
+            <li><a href="#" class="Movimentação_sub">Movimentação</a></li>
+            <li><a href="#" class="back">Voltar</a></li>
+            <li><a href="#">Lista de Movimentação</a></li>
+            <li><a href="#">Nova Movimentação</a></li>
+        </ul>
+    </nav>
+
+    <nav class="menu" id="Contas">
+        <ul>
+            <li><a href="#" class="Contas_sub">Contas</a></li>
+            <li><a href="#" class="back">Voltar</a></li>
+            <li><a href="#">Lista de Contas</a></li>
+            <li><a href="#">Nova Conta</a></li>
+        </ul>
+    </nav>
+
+    <nav class="menu" id="cadastrarusuario">
+        <ul>
+            <li><a href="#" class="Contas_sub">Usuários</a></li>
+            <li><a href="#" class="back">Voltar</a></li>
+            <li><a href="#">Cadastrar Usuário</a></li>
+            <li><a href="#">Cadastrar Perfil</a></li>
+        </ul>
+    </nav>
+
+    <div class="container grid1 Sombra">
+        <div class="row topicos">
+          <div class="col-lg">
+            One of three columns
+          </div>
+          <div class="col-lg">
+            One of three columns
+          </div>
+          <div class="col-lg">
+            One of three columns
+          </div>
+        </div>
+        <div class="row Linha2">
+            <div class="col-lg">
+              One of three columns
+            </div>
+            <div class="col-lg">
+              One of three columns
+            </div>
+            <div class="col-lg">
+              One of three columns
+            </div>
+            
+          </div>
+          <div class="row Linha1">
+            <div class="col-lg">
+              One of three columns
+            </div>
+            <div class="col-lg">
+              One of three columns
+            </div>
+            <div class="col-lg">
+              One of three columns
+            </div>
+            
+          </div>
+          <div class="row Linha2">
+            <div class="col-lg">
+              One of three columns
+            </div>
+            <div class="col-lg">
+              One of three columns
+            </div>
+            <div class="col-lg">
+              One of three columns
+            </div>
+            
+          </div>
+      </div>
+        
+        
+        <button type="button" class="botaoedit" data-toggle="modal" data-target="#exampleModal" data-whatever="">Cadastrar Novo Projeto</button>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5>Novo Projeto</h5>
+                <!-- <h5 class="modal-title" id="exampleModalLabel">Novo Projeto:</h5> -->
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                <div class="form-group">
+                    <label for="recipient-name" class="col-form-label">Projeto:</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                </div>
+                <div class="form-group">
+                    <label for="recipient-name" class="col-form-label">Status:</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Voltar</button>
+                <button type="button" class="btn btn-primary botaocadastrar">Cadastrar</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+        
+
+    
+</body>
+<script>
+    $('#exampleModal').on('show.bs.modal', function (event) {
+    var button = $(event.relatedTarget) // Button that triggered the modal
+    var recipient = button.data('whatever') // Extract info from data-* attributes
+    // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+    // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+    var modal = $(this)
+    modal.find('.modal-title').text('New message to ' + recipient)
+    modal.find('.modal-body input').val(recipient)
+    })
+</script>
+</html>
