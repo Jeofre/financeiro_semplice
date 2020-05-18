@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>lista_de_projetos</title>
+    <title>lista_de_contas</title>
     <link rel="stylesheet" type="text/css" href="home.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     
@@ -17,7 +17,7 @@
     
     <nav class="topnav">
         <div>
-            <H5 class="titulo">Projetos</H5>
+            <H5 class="titulo">Lista de Contas</H5>
         </div>
     </nav>
  
@@ -82,60 +82,10 @@
         </ul>
     </nav>
 
-    <div class="container grid1 Sombra">
-        <div class="row topicos">
-          <div class="col-lg">
-            One of three columns
-          </div>
-          <div class="col-lg">
-            One of three columns
-          </div>
-          <div class="col-lg">
-            One of three columns
-          </div>
-        </div>
-        <div class="row Linha2">
-            <div class="col-lg">
-              One of three columns
-            </div>
-            <div class="col-lg">
-              One of three columns
-            </div>
-            <div class="col-lg">
-              One of three columns
-            </div>
-            
-          </div>
-          <div class="row Linha1">
-            <div class="col-lg">
-              One of three columns
-            </div>
-            <div class="col-lg">
-              One of three columns
-            </div>
-            <div class="col-lg">
-              One of three columns
-            </div>
-            
-          </div>
-          <div class="row Linha2">
-            <div class="col-lg">
-              One of three columns
-            </div>
-            <div class="col-lg">
-              One of three columns
-            </div>
-            <div class="col-lg">
-              One of three columns
-            </div>
-            
-          </div>
-      </div>
-        
-        <!-- ------------------------botao projeto> -->
-        <button type="button" class="botaoeditarprojeto" data-toggle="modal" data-target="#exampleModal" data-whatever="">Cadastrar Novo Projeto</button>
 
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabe" aria-hidden="true">
+
+    <!-- ------------------------botao novo projeto sub menu> -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabe" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
             <div class="modal-header">
@@ -165,10 +115,8 @@
         </div>
     </div>
     </div>
-    
-    
-
 </body>
+<!-- --------script botao cadastrar projeto----------> 
 <script>
     $('#exampleModal').on('show.bs.modal', function (event) {
     var button = $(event.relatedTarget) // Button that triggered the modal

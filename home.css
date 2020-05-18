@@ -218,9 +218,9 @@
         /* Posicionamento do objeto */
         /* position: relative; */
         text-align: center;
-        width: 64%;
         margin-left: 231px;
         margin-top: 260px;
+        width: 64%;
         height: 96%;
         background-color: #f6f7f9;
         border-radius: 6px;
@@ -261,7 +261,7 @@
 
 
 
-        .botaoedit{
+        .botaoeditarprojeto{
         display: flex;     
         justify-content: center;  
         padding: 08px;
@@ -275,18 +275,49 @@
                 }
         
       
-        .botaocadastrar{
+        .botaocadastrarmodalproejto{
         background-color: rgb(27, 31, 49) !important;
         color: #fff; 
         }
 
     
-       .botaocadastrarnovoprojeto{
+       .botaocadastrarnovoprojetomenu{
         color: #ccc !important;
         font-family: Arial, Helvetica, sans-serif;
        }
 
-       .botaocadastrarnovoprojeto:hover{
+       .botaocadastrarnovoprojetomenu:hover{
         background-color: #fff;
         color: #222F65 !important;
             }
+
+        .cardformulariousuario{
+        width: 64%;
+        margin-left: 231px;
+        margin-top: 180px;
+        height: 96%;
+        }
+
+        .areacadastrousuario{
+        margin-left: 66px;
+        }
+
+        .hierarquiacadastrousuario{
+        margin-left: 475px;
+        margin-top: -86px;
+        }
+        
+        .botaocadastrarusuario{
+            background-color: rgb(27, 31, 49) !important;
+            color: #fff; 
+        }
+
+        /* .cardmenuusuario{
+        background-color: #f6f7f9;
+        border-radius: 6px;
+        text-align: center;
+        margin-left: 231px;
+        margin-top: 260px;
+        width: 64%;
+        height: 96%;
+        } */

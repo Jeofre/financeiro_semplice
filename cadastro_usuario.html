@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadastro_usuario</title>
+    <link rel="stylesheet" type="text/css" href="home.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+    
+    <nav class="topnav">
+        <div>
+            <H5 class="titulo">Cadastro Usuário</H5>
+        </div>
+    </nav>
+ 
+    <!-- criação de checkbox e icone do menu  -->
+    <input type="checkbox" id="chk">
+    <label for="chk" class="menu-icon" >&#9776;</label>
+    <div class="bg"></div>
+    
+
+    <!-- criação de menu  -->
+    <nav class="menu" id="principal">
+        <div>
+            <img class="Logo" src="Logo/Logo_Semplice.png_branco.png" alt="">
+        </div>
+        
+        
+            <!-- criação de lista para menu.  ou tag = <ol></ol> -->
+        <ul>
+            <li><a href="" class="voltar">Voltar</a></li>
+            <li><a href="#Projetos">Projetos <span>+</span></a></li>
+            <li><a href="#Contas">Contas <span>+</span></a></li>
+            <li><a href="#Movimentação">Movimentação <span>+</span></a></li>
+            <li><a href="#cadastrarusuario">Cadastrar Usuário <span>+</span></a></li>
+            <li><a href="menu_principal.html" class="teladashboard">Dashboard</a></li>
+        </ul>
+    </nav>
+    
+    <!-- criação de submenus -->
+    <nav class="menu Sub_menu" id="Projetos">
+        <ul>
+            <li><a href="#" class="Projetos_sub">Projetos</a></li>
+            <li><a href="#" class="back">Voltar</a></li>
+            <li><a href="lista_projeto.html">Lista de Projetos</a></li>
+            <li><a type="button" class="botaocadastrarnovoprojetomenu" data-toggle="modal" data-target="#exampleModal" data-whatever="">Novo Projeto</a>
+        </ul>
+    </nav>
+
+    <nav class="menu" id="Movimentação">
+        <ul>
+            <li><a href="#" class="Movimentação_sub">Movimentação</a></li>
+            <li><a href="#" class="back">Voltar</a></li>
+            <li><a href="lista_movimentacao.html">Lista de Movimentação</a></li>
+            <li><a type="button" class="botaocadastrarmovimentação" data-toggle="modal" data-target="#exampleModal2" data-whatever="">Nova Movimentação</a>
+        </ul>
+    </nav>
+
+    <nav class="menu" id="Contas">
+        <ul>
+            <li><a href="#" class="Contas_sub">Contas</a></li>
+            <li><a href="#" class="back">Voltar</a></li>
+            <li><a href="lista_contas.html">Lista de Contas</a></li>
+            <li><a type="button" class="botaocadastrarconta" data-toggle="modal" data-target="#exampleModal3" data-whatever="">Nova Conta</a>
+        </ul>
+    </nav>
+
+    <nav class="menu" id="cadastrarusuario">
+        <ul>
+            <li><a href="#" class="Contas_sub">Usuários</a></li>
+            <li><a href="#" class="back">Voltar</a></li>
+            <li><a href="cadastro_usuario.html">Cadastrar Usuário</a></li>
+            <li><a href="#">Cadastrar Perfil</a></li>
+        </ul>
+    </nav>
+
+<div class="cardmenuusuario">
+    <form class="cardformulariousuario">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">CPF</label>
+            <input type="email" class="form-control" id="inputEmail4" placeholder="">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputPassword4">Nome</label>
+            <input type="password" class="form-control" id="inputPassword4" placeholder="">
+          </div>
+        </div>
+        <div class="form-group col-md-4 areacadastrousuario">
+            <label for="inputState">Area</label>
+            <select id="inputState" class="form-control">
+              <option selected>TI</option>
+              <option>Financeiro</option>
+              <option>Administrativo</option>
+              <option>Desenvolvedor</option>
+            </select>
+          </div>
+        <div class="form-group col-md-4 hierarquiacadastrousuario">
+            <label for="inputState">Hierarquia</label>
+            <select id="inputState" class="form-control">
+              <option selected>Gestor</option>
+              <option>Analista</option>
+            </select>
+          </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputCity">Email</label>
+            <input type="text" class="form-control" id="inputCity">
+          </div>
+          <div class="form-group col-md-2">
+            <label for="inputZip">Senha</label>
+            <input type="text" class="form-control" style="width: 210px;" id="inputZip">
+          </div>
+          <div style='margin-left: 80px' class="form-group col-md-2">
+            <label for="inputZip">Confirmar Senha</label>
+            <input type="text" class="form-control" style="width: 210px;" id="inputZip">
+          </div>
+        </div>
+          <div style="margin-left: -13px;" class="form-group col-md-4">
+            <label for="inputState">Status</label>
+            <select id="inputState" class="form-control">
+              <option selected>Ativo</option>
+              <option>Inativo</option>
+            </select>
+          </div>
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Tem Certeza do Cadastro ?
+            </label>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary botaocadastrarusuario">Cadastrar Usuário</button>
+      </form>
+
+</div>
+
+
+<!-- ------------------------botao novo projeto sub menu> -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabe" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+      <div class="modal-content">
+      <div class="modal-header">
+          <h5>Novo Projeto</h5>
+          <!-- <h5 class="modal-title" id="exampleModalLabel">Novo Projeto:</h5> -->
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+      <div class="modal-body">
+          <form>
+          <div class="form-group">
+              <label for="recipient-name" class="col-form-label">Projeto:</label>
+              <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+              <label for="recipient-name" class="col-form-label">Status:</label>
+              <input type="text" class="form-control" id="recipient-name">
+          </div>
+          </form>
+      </div>
+      <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Voltar</button>
+          <button type="button" class="btn btn-primary botaocadastrarmodalproejto">Cadastrar</button>
+      </div>
+      </div>
+  </div>
+</div>
+</div>
+</body>
+
+<!-- --------script botao cadastrar projeto----------> 
+<script>
+  $('#exampleModal').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget) // Button that triggered the modal
+  var recipient = button.data('whatever') // Extract info from data-* attributes
+  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+  var modal = $(this)
+  modal.find('.modal-title').text('New message to ' + recipient)
+  modal.find('.modal-body input').val(recipient)
+  })
+</script>
+</html>
+
+
+
+    

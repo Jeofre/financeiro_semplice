@@ -3,12 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>semplice_financeiro</title>
-
-   <!--  Link para chamar CSS -->
+    <title>lista_de_projetos</title>
     <link rel="stylesheet" type="text/css" href="home.css">
-
-    <!-- link para chamar bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
@@ -18,26 +14,10 @@
 
 
 <body>
-
-    <!-- Adicionar imagem trazer caminho das pastas. -->
-  <!-- <img src="Logo/Logo_Semplice.png_branco.png" alt=""> -->
-
-<!-- tag p/ titulo e subtitulos -->
-    <!-- <h1></h1> -->
-    <!-- <h2></h2>
-    <h3></h3>
-    <h4></h4>
-    <h5></h5>
-    <h6></h6> -->
     
-     <!-- //tag p/ paragrafo -->
-        <!-- <p>Semplice</p> -->
-
-
-    <!-- Geração de cabeçalho -->
     <nav class="topnav">
         <div>
-            <H5 class="titulo">Gestão Financeira Semplice</H5>
+            <H5 class="titulo">Financeiro Semplice</H5>
         </div>
     </nav>
  
@@ -61,6 +41,7 @@
             <li><a href="#Contas">Contas <span>+</span></a></li>
             <li><a href="#Movimentação">Movimentação <span>+</span></a></li>
             <li><a href="#cadastrarusuario">Cadastrar Usuário <span>+</span></a></li>
+            <li><a href="menu_principal.html" class="teladashboard">Dashboard</a></li>
         </ul>
     </nav>
     
@@ -70,7 +51,7 @@
             <li><a href="#" class="Projetos_sub">Projetos</a></li>
             <li><a href="#" class="back">Voltar</a></li>
             <li><a href="lista_projeto.html">Lista de Projetos</a></li>
-            <li><a href="#">Novo Projeto</a></li>
+            <li><a type="button" class="botaocadastrarnovoprojetomenu" data-toggle="modal" data-target="#exampleModal" data-whatever="">Novo Projeto</a>
         </ul>
     </nav>
 
@@ -78,8 +59,8 @@
         <ul>
             <li><a href="#" class="Movimentação_sub">Movimentação</a></li>
             <li><a href="#" class="back">Voltar</a></li>
-            <li><a href="#">Lista de Movimentação</a></li>
-            <li><a href="#">Nova Movimentação</a></li>
+            <li><a href="lista_movimentacao.html">Lista de Movimentação</a></li>
+            <li><a type="button" class="botaocadastrarmovimentação" data-toggle="modal" data-target="#exampleModal2" data-whatever="">Nova Movimentação</a>
         </ul>
     </nav>
 
@@ -87,8 +68,8 @@
         <ul>
             <li><a href="#" class="Contas_sub">Contas</a></li>
             <li><a href="#" class="back">Voltar</a></li>
-            <li><a href="#">Lista de Contas</a></li>
-            <li><a href="#">Nova Conta</a></li>
+            <li><a href="lista_contas.html">Lista de Contas</a></li>
+            <li><a type="button" class="botaocadastrarconta" data-toggle="modal" data-target="#exampleModal3" data-whatever="">Nova Conta</a>
         </ul>
     </nav>
 
@@ -96,13 +77,57 @@
         <ul>
             <li><a href="#" class="Contas_sub">Usuários</a></li>
             <li><a href="#" class="back">Voltar</a></li>
-            <li><a href="#">Cadastrar Usuário</a></li>
+            <li><a href="cadastro_usuario.html">Cadastrar Usuário</a></li>
             <li><a href="#">Cadastrar Perfil</a></li>
         </ul>
     </nav>
 
 
+ <!-- ------------------------botao novo projeto sub menu> -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabe" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5>Novo Projeto</h5>
+                <!-- <h5 class="modal-title" id="exampleModalLabel">Novo Projeto:</h5> -->
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                <div class="form-group">
+                    <label for="recipient-name" class="col-form-label">Projeto:</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                </div>
+                <div class="form-group">
+                    <label for="recipient-name" class="col-form-label">Status:</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Voltar</button>
+                <button type="button" class="btn btn-primary botaocadastrarmodalproejto">Cadastrar</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    </div>
 </body>
+
+<!-- --------script botao cadastrar projeto----------> 
+<script>
+    $('#exampleModal').on('show.bs.modal', function (event) {
+    var button = $(event.relatedTarget) // Button that triggered the modal
+    var recipient = button.data('whatever') // Extract info from data-* attributes
+    // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+    // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+    var modal = $(this)
+    modal.find('.modal-title').text('New message to ' + recipient)
+    modal.find('.modal-body input').val(recipient)
+    })
+</script>
 </html>
 
 
