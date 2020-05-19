@@ -214,7 +214,30 @@
 
     /* Estilização Pagina Lista de Projetos */
 
-    .grid1{
+    .gridprojetos{
+        /* Posicionamento do objeto */
+        /* position: relative; */
+        text-align: center;
+        margin-left: 231px;
+        margin-top: 260px;
+        width: 64%;
+        height: 96%;
+        background-color: #f6f7f9;
+        border-radius: 6px;
+    }
+    .gridcontas{
+        /* Posicionamento do objeto */
+        /* position: relative; */
+        text-align: center;
+        margin-left: 231px;
+        margin-top: 260px;
+        width: 64%;
+        height: 96%;
+        background-color: #f6f7f9;
+        border-radius: 6px;
+    }
+
+    .gridmovimentação{
         /* Posicionamento do objeto */
         /* position: relative; */
         text-align: center;
@@ -227,6 +250,7 @@
     }
 
 
+
     .Sombra{
         box-shadow: inset 0 0 10px #000000;
         -webkit-box-shadow: inset 0 0 10px #000000;
@@ -235,7 +259,7 @@
       }
 
 
-    .topicos{
+    .topicosprojetos{
 
         padding: 15px;
         background-color: rgb(27, 31, 49) !important;
@@ -243,6 +267,26 @@
         border-radius: 6px; 
         
     }
+    
+    .topicoscontas{
+
+        padding: 15px;
+        background-color: rgb(27, 31, 49) !important;
+        color: #fff;
+        border-radius: 6px; 
+        
+    }
+
+    .topicosmovimentação{
+
+        padding: 15px;
+        background-color: rgb(27, 31, 49) !important;
+        color: #fff;
+        border-radius: 6px; 
+        
+    }
+
+
     
     .Linha1{
         padding: 25px;
@@ -291,6 +335,12 @@
         color: #222F65 !important;
             }
 
+
+
+
+
+
+            
         .cardformulariousuario{
         width: 64%;
         margin-left: 231px;
